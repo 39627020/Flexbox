@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格布局</title>
+    <style>
+        .Grid {
+            display: flex;
+        }
+
+        .Grid-cell {
+            flex: 1;
+            background-color: #ffd200;
+            margin: 10px 10px;
+        }
+
+        .Grid-cell.u-full {
+            flex: 0 0 100%;
+        }
+
+        .Grid-cell.u-1of2 {
+            flex: 0 0 50%;
+        }
+
+        .Grid-cell.u-1of3 {
+            flex: 0 0 33.3333%;
+        }
+
+        .Grid-cell.u-1of4 {
+            flex: 0 0 25%;
+        }
+
+        .Grid-cell.menu {
+            flex: 0 0 20%;
+        }
+
+        .Grid-cell.content {
+            flex: 0 0 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="Grid">
+        <div class="Grid-cell">A</div>
+        <div class="Grid-cell">A</div>
+        <div class="Grid-cell">A</div>
+    </div>
+    <div class="Grid">
+        <div class="Grid-cell u-1of2">A</div>
+        <div class="Grid-cell u-1of4">A</div>
+        <div class="Grid-cell u-1of4">A</div>
+    </div>
+    <div class="Grid">
+        <div class="Grid-cell menu">A</div>
+        <div class="Grid-cell content">A</div>
+    </div>
+
+</body>
+</html>
